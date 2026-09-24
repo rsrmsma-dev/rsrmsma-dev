@@ -28,7 +28,9 @@ Automated attendance logging
 Role-based access control
 Reports and analytics dashboard
 Biometric attendance automation
-🛠️ Technologies & Tools
+
+🛠️ Technologies & Tools 
+
 Languages
 
 HTML/CSS · JavaScript · SQL · PHP
