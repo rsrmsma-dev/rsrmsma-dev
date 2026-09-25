@@ -1,8 +1,7 @@
-- name: Build
-  working-directory: client
-  run: npm run build
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
 
-- name: Upload Pages artifact
-  uses: actions/upload-pages-artifact@v3
-  with:
-    path: client/dist
+export default defineConfig({
+  base: '/rsrmsma-dev/',
+  plugins: [react()],
+})
