@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+    --ink: #0f172a;
+    --muted: #55607a;
+    --navy: #0b1f3a;
+    --navy-light: #12294a;
+    --gold: #b8892e;
+    --gold-light: #d4af62;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+    font-family: "Sora", "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(184, 137, 46, 0.22);
+    color: var(--ink);
+}
+
+/* Smooth 3D flip for the business card */
+.flip-perspective {
+    perspective: 2200px;
+}
+
+.flip-card {
+    transform-style: preserve-3d;
+}
+
+.flip-face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-face-back {
+    transform: rotateY(180deg);
+}
