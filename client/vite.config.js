@@ -1,7 +1,8 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+- name: Build
+  working-directory: client
+  run: npm run build
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+- name: Upload Pages artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: client/dist
